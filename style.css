@@ -1,0 +1,33 @@
+body {background:black;}
+
+h1 {color:red; font-family:Georgia, Arial, Helvetica;}
+
+h2 {color:blue;}
+
+div {color:black;}
+
+div.box {width:200px; 
+height:200px; 
+background:orange;
+margin: 5px;
+padding: 5px;
+float: left;
+}
+div#wrapper {
+width: 900px;}
+
+@media only screen
+and (max-width : 320px) {body {background:violet;}
+div#wrapper {width: 300px;}
+}
+
+@media only screen
+and (min-width : 321px)
+and (max-width : 900px) {body {background:purple;}
+div#wrapper {width: 450px;}
+}
+
+@media only screen
+and (min-width : 900px) {
+div#wrapper {width: 900px;}
+}
